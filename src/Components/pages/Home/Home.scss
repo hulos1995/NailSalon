@@ -10,7 +10,8 @@
   align-items: center;
   justify-content: center;
   height: 70vh;
-  background: url('hero-background.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)),
+    url('../../../assets/images/hero.jpg') no-repeat center center/cover;
   color: #fff;
 
   &__content {
@@ -28,13 +29,13 @@
   }
 
   &__button {
-    padding: 10px 20px;
+    padding: 0.75rem 1.25rem;
     background-color: $color2;
     border: none;
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
-
+    border-radius: 5px;
     &:hover {
       background-color: $color3;
     }
