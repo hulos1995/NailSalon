@@ -1,5 +1,6 @@
-import React from 'react';
 import logo from '../../assets/images/logo.png';
+import { Link } from 'react-router-dom';
+import './Header.scss';
 const Header: React.FC = () => {
   return (
     <header className='header'>
@@ -9,9 +10,9 @@ const Header: React.FC = () => {
       <nav className='header__nav'>
         <ul className='header__nav-list'>
           <li className='header__nav-item'>
-            <a href='#home' className='header__nav-link'>
+            <Link to='/' className='header__nav-link'>
               Home
-            </a>
+            </Link>
           </li>
           <li className='header__nav-item'>
             <a href='#services' className='header__nav-link'>
