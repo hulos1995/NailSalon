@@ -1,18 +1,10 @@
+import Hero from '../../Hero/Hero';
 import './Home.scss';
 import React from 'react';
 const App: React.FC = () => {
   return (
     <div className='app'>
-      <section className='hero' id='home'>
-        <div className='hero__content'>
-          <h1 className='hero__title'>Welcome to Our Nail Salon</h1>
-          <p className='hero__subtitle'>
-            Experience the best nail care services
-          </p>
-          <button className='hero__button'>Book an Appointment</button>
-        </div>
-      </section>
-
+      <Hero />
       <section className='services' id='services'>
         <h2 className='services__title'>Our Services</h2>
         <div className='services__list'>
