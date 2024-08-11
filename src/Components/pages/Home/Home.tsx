@@ -1,6 +1,8 @@
 import Hero from '../../Hero/Hero';
 import './Home.scss';
-import React from 'react';
+import manicure from '../../../assets/images/manicure.jpg';
+import pedicure from '../../../assets/images/pedicure.jpg';
+import nailart from '../../../assets/images/art.jpg';
 const App: React.FC = () => {
   return (
     <div className='app'>
@@ -10,8 +12,8 @@ const App: React.FC = () => {
         <div className='services__list'>
           <div className='services__item'>
             <img
-              src='service1.jpg'
-              alt='Service 1'
+              src={manicure}
+              alt={`${manicure} logo`}
               className='services__item-image'
             />
             <h3 className='services__item-title'>Manicure</h3>
@@ -21,8 +23,8 @@ const App: React.FC = () => {
           </div>
           <div className='services__item'>
             <img
-              src='service2.jpg'
-              alt='Service 2'
+              src={pedicure}
+              alt={`${pedicure} logo`}
               className='services__item-image'
             />
             <h3 className='services__item-title'>Pedicure</h3>
@@ -32,8 +34,8 @@ const App: React.FC = () => {
           </div>
           <div className='services__item'>
             <img
-              src='service3.jpg'
-              alt='Service 3'
+              src={nailart}
+              alt={`${nailart} logo`}
               className='services__item-image'
             />
             <h3 className='services__item-title'>Nail Art</h3>
