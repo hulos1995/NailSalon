@@ -1,51 +1,11 @@
 import Hero from '../../Hero/Hero';
 import './Home.scss';
-import manicure from '../../../assets/images/manicure.jpg';
-import pedicure from '../../../assets/images/pedicure.jpg';
-import nailart from '../../../assets/images/art.jpg';
+import Service from '../../Service/Service';
 const App: React.FC = () => {
   return (
     <div className='app'>
       <Hero />
-      <section className='services' id='services'>
-        <h2 className='services__title'>Our Services</h2>
-        <div className='services__list'>
-          <div className='services__item'>
-            <img
-              src={manicure}
-              alt={`${manicure} logo`}
-              className='services__item-image'
-            />
-            <h3 className='services__item-title'>Manicure</h3>
-            <p className='services__item-description'>
-              Description of manicure service.
-            </p>
-          </div>
-          <div className='services__item'>
-            <img
-              src={pedicure}
-              alt={`${pedicure} logo`}
-              className='services__item-image'
-            />
-            <h3 className='services__item-title'>Pedicure</h3>
-            <p className='services__item-description'>
-              Description of pedicure service.
-            </p>
-          </div>
-          <div className='services__item'>
-            <img
-              src={nailart}
-              alt={`${nailart} logo`}
-              className='services__item-image'
-            />
-            <h3 className='services__item-title'>Nail Art</h3>
-            <p className='services__item-description'>
-              Description of nail art service.
-            </p>
-          </div>
-        </div>
-      </section>
-
+      <Service />
       <section className='about' id='about'>
         <h2 className='about__title'>About Us</h2>
         <p className='about__description'>Information about the nail salon.</p>
@@ -73,7 +33,17 @@ const App: React.FC = () => {
           </button>
         </form>
       </section>
-
+      <div style={{ width: '100%', height: '400px' }}>
+        <iframe
+          src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47237.46792954953!2d-83.0876791!3d42.2712278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b2d25649ea2bf%3A0x8037139bea02d306!2sRegal%20Nails%2C%20Salon%20%26%20Spa!5e0!3m2!1sen!2sca!4v1723417281164!5m2!1sen!2sca'
+          width='1920'
+          height='400'
+          style={{ border: 0 }}
+          allowFullScreen={true}
+          loading='lazy'
+          referrerPolicy='no-referrer-when-downgrade'
+        ></iframe>
+      </div>
       <footer className='footer'>
         <p className='footer__text'>© 2024 Nail Salon. All rights reserved.</p>
       </footer>

@@ -1,0 +1,44 @@
+@use '../../style/partials/_variable' as *;
+@use '../../style/partials/_reset' as *;
+
+.services {
+  padding: 50px 20px;
+  background-color: $color5;
+  text-align: center;
+
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+
+    &-image {
+      width: 100%;
+      border-radius: 10px;
+      &-art {
+        width: 85%;
+        border-radius: 10px;
+      }
+    }
+
+    &-title {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+
+    &-description {
+      font-size: 1rem;
+      color: #666;
+    }
+  }
+}
