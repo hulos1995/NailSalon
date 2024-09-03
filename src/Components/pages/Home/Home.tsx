@@ -36,7 +36,7 @@ const App: React.FC = () => {
       <div style={{ width: '100%', height: '400px' }}>
         <iframe
           src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47237.46792954953!2d-83.0876791!3d42.2712278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b2d25649ea2bf%3A0x8037139bea02d306!2sRegal%20Nails%2C%20Salon%20%26%20Spa!5e0!3m2!1sen!2sca!4v1723417281164!5m2!1sen!2sca'
-          width='1920'
+          width='1423'
           height='400'
           style={{ border: 0 }}
           allowFullScreen={true}
