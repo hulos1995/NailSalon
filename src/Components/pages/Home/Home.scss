@@ -1,0 +1,111 @@
+@use '../../../style/partials/_variable' as *;
+@use '../../../style/partials/_reset' as *;
+.app {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.services {
+  padding: 50px 20px;
+  background-color: $color5;
+  text-align: center;
+
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+
+    &-image {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    &-title {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+
+    &-description {
+      font-size: 1rem;
+      color: #666;
+    }
+  }
+}
+
+.about {
+  padding: 50px 20px;
+  background-color: $color4;
+  text-align: center;
+
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: #666;
+  }
+}
+
+.contact {
+  padding: 50px 20px;
+  background-color: $color3;
+  text-align: center;
+
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-input,
+    &-textarea {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    &-button {
+      padding: 10px 20px;
+      background-color: $color2;
+      border: none;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color1;
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 20px;
+  background-color: $color1;
+  text-align: center;
+  color: #fff;
+
+  &__text {
+    margin: 0;
+  }
+}

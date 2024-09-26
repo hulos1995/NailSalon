@@ -1,0 +1,33 @@
+@use '../../style/partials/_variable' as *;
+@use '../../style/partials/_reset' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: $color1;
+  &__logo img {
+    height: 70px;
+  }
+
+  &__nav {
+    &-list {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+      font-size: 1rem;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      &:hover {
+        color: $color3;
+      }
+    }
+  }
+}
